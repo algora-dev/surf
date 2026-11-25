@@ -67,3 +67,14 @@ Before GitHub/Vercel: run npm install, npm run typecheck and npm run build, comm
 The homepage logo and supporting text remain fully opaque for the first second, then fade together to 50% opacity over 800ms. They remain at 50% opacity for the rest of the page view, rather than fading on each video loop. The video, overlay and controls retain their existing appearance. This CSS-only effect is shared by all three languages; users with reduced-motion preferences retain the full-opacity logo and text. No layout or content changes from the approved v0.8 pages.
 
 For the deployment agent: see AGENTS.md for the exact preflight and GitHub/Vercel steps. This archive contains source and runtime media, not a compiled Next.js output. Generate the package lock on a network-enabled machine and commit it after verification. The font binaries are not included and no real catalogue inventory or reviews have been supplied. Do not deploy publicly until the outstanding checks are approved.
+
+## v1.0 update
+
+This is the new enquiry / SEO development candidate. The previous v0.9 instructions below describe the approved visual baseline; the authoritative deployment and database instructions are now in [docs/BOOKING-SETUP.md](docs/BOOKING-SETUP.md) and [AGENTS.md](AGENTS.md). Do not enable public indexing or enquiries until the agent verifies production build, authentication, database, privacy and workflow.
+
+## v1.1 handover (supersedes v1.0 enquiry/admin setup)
+Read `docs/CONCIERGE-V11.md` first. Dedicated Supabase only; run `supabase/schema.sql` followed by `supabase/upgrade-v11.sql` before configuring the preview. The new conversational assistant requires server-side OpenAI credentials; fallback form and direct WhatsApp remain. Use `npm test` (Node 22) for booking and concierge rule tests. `npm run typecheck` and `npm run build` must pass on the deployment agent's machine. Preserve the approved public design. No direct WhatsApp sending, no customer booking promises, and no shared QuoteCore+ database. The new README section and CONCIERGE-V11 take precedence over earlier v1.0 instructions.
+
+## v1.2 owner calendar assistant (current release)
+
+Start with `docs/ADMIN-ASSISTANT-V12.md` (authoritative new demo, deployment, guardrails and acceptance tests). `/admin` supports a credential-free, explicitly enabled local/protected-preview demo with fictional browser-local data. Set `PENINSULA_DEMO_MODE=true` and `SITE_INDEXABLE=false`, then click Entrar (demo). Production requires real owner authentication. For live mode apply `supabase/upgrade-v12.sql` after the v1.1 migration. The owner assistant accepts typed and recorded Spanish instructions, transcribes to editable text and prepares a single validated change for explicit human confirmation; it cannot write without a server-held proposal and authenticated confirmation. Public website design, SEO pages and enquiry workflow remain v1.1. Do not deploy live or index until integration tests pass.

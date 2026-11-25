@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {blank,normalizeDraft,missing,compatibleGroup,messageFor,ui} from '../src/lib/concierge.ts';
+import {statusAt,type Block,type Hours} from '../src/lib/booking.ts';
+const draft={...blank(1),date:'2026-12-05',quantity:'2',level:'beginner',format:'shared',time:'morning',duration:'2 hours'};
+const groups=[{date:'2026-12-04',time:'09:00',spots:3,level:'beginner'},{date:'2026-12-05',spots:1,level:'beginner'},{date:'2026-12-05',spots:4,level:'advanced'},{date:'2026-12-07',spots:6,level:'beginner'}];
+assert.equal(compatibleGroup(draft,groups,'2026-12-01')?.date,'2026-12-04');
+assert.equal(compatibleGroup({...draft,format:'private'},groups,'2026-12-01'),null);
+assert.equal(compatibleGroup({...draft,quantity:'8'},groups,'2026-12-01'),null);
+assert.equal(compatibleGroup({...draft,level:'mixed'},groups,'2026-12-01'),null);
+assert.equal(compatibleGroup({...draft,date:'2026-12-04..2026-12-06'},groups,'2026-12-01')?.date,'2026-12-04');
+assert.equal(compatibleGroup({...draft,date:'2026-02-30'},groups,'2026-12-01'),null);
+assert.equal(compatibleGroup({...draft,date:'flexible'},groups,'2026-12-01'),null);
+assert.equal(compatibleGroup(draft,groups,'2026-12-05'),null);
+assert.equal(compatibleGroup({...draft,service:5},groups,'2026-12-01'),null);
+assert.deepEqual(missing(draft),[]);
+assert.deepEqual(missing({...blank(5),date:'tomorrow',quantity:'1',level:'advanced',duration:'2 days'}),[]);
+assert.deepEqual(missing({...blank(6),details:'T-shirt'}),[]);
+assert.equal(normalizeDraft({service:99,level:'private',format:'invalid'}).service,0);
+assert.equal(normalizeDraft({service:1,details:'x'.repeat(900)}).details.length,600);
+for(const locale of ['en','es','fr'] as const){const msg=messageFor(locale,draft,['General','Lesson'],{name:'Alex',phone:'',email:'alex@example.test'});assert.ok(msg.includes('Alex'));assert.ok(msg.includes('2026-12-05'));assert.ok(msg.includes(ui[locale].formats[1]));assert.ok(!msg.includes('undefined'));assert.ok(!msg.includes('NaN'));}
+const h:Hours={configured:true,start_time:'07:00',end_time:'21:00',days:[0,1,2,3,4,5,6],slow_weekend:true};
+assert.equal(statusAt(new Date('2026-12-05T14:00:00Z'),[],h),'weekend');
+const b:Block={id:'x',kind:'available',starts_at:'2026-12-05T13:00:00Z',ends_at:'2026-12-05T15:00:00Z',title:'private',enquiry_id:null};
+assert.equal(statusAt(new Date('2026-12-05T14:00:00Z'),[b],h),'available');
+assert.equal(statusAt(new Date('2026-12-05T14:00:00Z'),[{...b,kind:'busy'}],h),'busy');
+assert.equal(statusAt(new Date('2026-12-05T04:00:00Z'),[],h),'rest');
+console.log('Concierge matching, validation, message localisation and availability tests passed.');

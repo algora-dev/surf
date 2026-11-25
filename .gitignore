@@ -6,6 +6,4 @@ out/
 *.tsbuildinfo
 .DS_Store
 public/brand/fonts/
-
 .vercel
-.env*

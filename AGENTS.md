@@ -1,32 +1,9 @@
-# Península Surf School — agent handover (v0.9)
+# Península Surf School — v1.0 handover
 
-## Goal
-Deploy the approved multilingual Next.js App Router website to GitHub and Vercel, initially as a preview. Preserve the design and copy from v0.8 plus the v0.9 hero watermark effect. No redesign is requested.
+This package supersedes v0.9 as a development candidate. Preserve the approved v0.9 design, brand assets, video and hero fade. The new scope is availability-aware enquiry form, owner-only calendar/inbox, and dedicated SEO pages for beginner lessons and board rental in EN/ES/FR. Read docs/BOOKING-SETUP.md first, then README.md and BRAND-ASSETS.md (older baseline instructions). Do not overwrite changes already made in the GitHub repository without reviewing its diff. Use a feature branch. Run `npm install`, `npm run typecheck`, `npm run test:booking`, `npm run build`, and commit lockfile after successful verification. Provision Supabase and owner login using the setup guide; test in protected Vercel preview. Do not deploy untested auth/database or turn on indexing. WhatsApp direct links and web responses work independently of a future WhatsApp API; no native automated WhatsApp replies, real bookings, notifications (unless optional Resend configured), or AI are live. Do not claim otherwise. Do not publish unconfirmed stock, fake reviews, prices, or outdated legal text. Confirm phone, branding/font licenses and privacy requirements. Return preview URL and actual test results.
 
-## Preflight
-- Use Node.js 22 LTS (see package.json for the minimum supported version). Extract the archive so package.json is at the repository root.
-- Run `npm install`, `npm run typecheck`, `npm run build`. Resolve any actual build or dependency issues before pushing; do not assume the HTML preview is proof of a Next.js production build. Review security advisories and use supported patched dependency versions. Commit the generated `package-lock.json`.
-- Run `npm start` and check the root redirect, all nine routes, native language attributes, the language switcher preserving page type, mobile menu, section anchors, WhatsApp links, FAQs, and media loading.
-- Hero: verify that the logo and supporting text are at 100% opacity for 1 second, ease to 50% over 800ms, and stay there. The original video is in `public/media/hero.mp4`, muted and looping. Reduced-motion visitors retain fully opaque hero content. Test on mobile Safari and Chrome as well as desktop.
-- No environment secrets or database required. `NEXT_PUBLIC_SITE_URL` is optional; set it to the confirmed final HTTPS origin, not the placeholder in `.env.example`, when ready for canonical/hreflang tags.
+## v1.1 requirements (latest)
+Read docs/CONCIERGE-V11.md before deployment. Keep Península in a dedicated Supabase project. Run the base schema and v1.1 migration, never use QuoteCore+ credentials. The website concierge is an enquiry qualification assistant, not a booking engine; only owner may confirm. Do not remove the manual fallback or claim WhatsApp was sent. Validate the approved exact-message handoff, privacy, API usage limits, authentication refresh, RLS and booking RPCs before live data. Preserve design, all 15 localized routes, and preview noindex. Test with actual model credentials and mobile devices. This supersedes old v1.0 instructions.
 
-## Repository and deployment
-1. Create or select the owner's GitHub repository. Do not overwrite an existing repo or change DNS without authorization.
-2. Commit the verified source, media, configuration, and lockfile. Do not commit `node_modules`, `.next`, local `.env` files, or unlicensed font files. See `.gitignore`.
-3. Push the main branch or agreed preview branch. Import into Vercel, choose the Next.js framework preset, root directory `.`, Node.js 22, and standard install/build settings. Leave output directory on the framework default. Do not use the standalone HTML as the deployment target.
-4. Deploy to a protected preview when available; verify nine URLs and share the preview link for owner approval. Do not connect the public domain until approved.
-
-## Routes
-- English: `/en`, `/en/surfboards`, `/en/clothing`
-- Spanish: `/es`, `/es/tablas`, `/es/ropa`
-- French: `/fr`, `/fr/planches`, `/fr/vetements`
-
-## Content to preserve / outstanding approvals
-- Base: Playa Bonita, Las Terrenas; lessons may take place elsewhere in Samaná depending on group size, level and conditions.
-- No published prices or checkout; enquiries go to Cristian via WhatsApp. Confirm phone, email and social links in `src/lib/content.ts` before public launch.
-- Real reviews and inventory go in `src/lib/catalogue.ts`; keep demo items and review placeholders out of production. Obtain permission for Instagram screenshots and media; verify the conflicting establishment year. Review translations and legal/privacy requirements.
-- Brand colours, patterns, spacing and rounded corners: `src/styles/brand.css` and `src/styles/globals.css`. See `BRAND-ASSETS.md` and `asset-manifest.json`. Official font files remain excluded pending webfont licensing; fallback typefaces are active. See README for installation guidance if licensed.
-- The supplied video and site imagery are bundled. A second video is not included because it was not supplied.
-
-## Verification status
-Source was updated from the approved v0.8 archive. Full npm dependency install, TypeScript check and Next.js production build still require verification on a network-enabled machine. The hero effect is a shared CSS rule with no new dependencies.
+## v1.2 update — highest-priority handover
+Read `docs/ADMIN-ASSISTANT-V12.md` first; it supersedes older admin deployment steps. Use a protected preview with `PENINSULA_DEMO_MODE=true`, `SITE_INDEXABLE=false` and no credentials for initial owner testing. When connecting the dedicated Supabase project, apply `schema.sql`, `upgrade-v11.sql`, `upgrade-v12.sql` (only missing migrations, in order). Turn demo off before live integration; never bypass authentication on a real database. Configure server-side OpenAI and transcription model keys; no secrets in source. Test owner-only proposal/confirm, replay/stale and overlap protection, voice, auth, grants, and real device workflow. Preserve all approved public pages, design, translations, SEO, media and customer enquiry system. Run `npm test`, `npm run typecheck`, `npm run build` and commit package lock before Vercel. Return protected preview URL and explicit test results; no final launch or index until owner approval.
