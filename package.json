@@ -1,6 +1,6 @@
 {
   "name": "peninsula-surf-school",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,8 +9,9 @@
     "typecheck": "tsc --noEmit",
     "test:booking": "node --experimental-strip-types --disable-warning=ExperimentalWarning tests/booking.test.mts",
     "test:concierge": "node --experimental-strip-types --disable-warning=ExperimentalWarning tests/concierge.test.mts",
-    "test": "npm run test:booking && npm run test:concierge && npm run test:admin",
-    "test:admin": "node tests/admin-assistant.test.cjs"
+    "test": "npm run test:booking && npm run test:concierge && npm run test:admin && npm run test:mode",
+    "test:admin": "node tests/admin-assistant.test.cjs",
+    "test:mode": "node tests/enquiry-mode.test.cjs"
   },
   "engines": {
     "node": ">=20.9.0"

@@ -10,3 +10,6 @@ Read `docs/ADMIN-ASSISTANT-V12.md` first; it supersedes older admin deployment s
 
 ## v1.3 update
 Read `docs/ADMIN-V13.md` before deployment. English and Spanish admin, private assistant language and safe browser-only factory reset are added. No new migrations. For live integration test cleanup follow the dedicated test-project procedure; do not run reset on production or QuoteCore+.
+
+## v1.4 update
+Read `docs/ENQUIRY-MODE-V14.md` first. Merge the focused update with current v1.3 deployment work; do not overwrite credentials, the generated lockfile or agent fixes. Apply only the new additive `supabase/upgrade-v14.sql` if earlier migrations already exist. Keep the public contact route functional without OpenAI or Supabase; enforce the setting server-side and preserve customer details on failures. Do not gate the private calendar assistant. Run the complete acceptance checklist, tests, typecheck and production build before release.

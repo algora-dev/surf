@@ -81,3 +81,6 @@ Start with `docs/ADMIN-ASSISTANT-V12.md` (authoritative new demo, deployment, gu
 
 ## v1.3 bilingual admin
 See [ADMIN-V13](docs/ADMIN-V13.md) for the language switch, safe reset and updated acceptance tests. No new database migration.
+
+## v1.4 enquiry resilience
+See [ENQUIRY-MODE-V14](docs/ENQUIRY-MODE-V14.md). Apply `supabase/upgrade-v14.sql` after v1.2 on the dedicated Península database. Settings offers a confirmed bilingual Smart assistant / Direct WhatsApp selector. Public contact defaults to direct on missing settings or dependencies; the private assistant remains independent. Merge the focused v1.4 patch into the current deployment branch and verify the live tests before release.
