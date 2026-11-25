@@ -1,0 +1,178 @@
+[
+  {
+    "path": "public/brand/logos/primary-slate.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-36.png",
+    "width": 1400,
+    "height": 559,
+    "bytes": 131044,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/primary-cream.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-31.png",
+    "width": 1400,
+    "height": 559,
+    "bytes": 126769,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/secondary-slate.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-37.png",
+    "width": 1400,
+    "height": 876,
+    "bytes": 189235,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/secondary-cream.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-32.png",
+    "width": 1400,
+    "height": 876,
+    "bytes": 180935,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/icon-slate.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-38.png",
+    "width": 691,
+    "height": 619,
+    "bytes": 15368,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/icon-cream.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-33.png",
+    "width": 691,
+    "height": 619,
+    "bytes": 15514,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/submark-slate.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-39.png",
+    "width": 976,
+    "height": 1000,
+    "bytes": 176161,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/submark-cream.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-34.png",
+    "width": 976,
+    "height": 1000,
+    "bytes": 169356,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/simplified-slate.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-40.png",
+    "width": 1000,
+    "height": 139,
+    "bytes": 49279,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/logos/simplified-cream.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-35.png",
+    "width": 1000,
+    "height": 139,
+    "bytes": 47135,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/patterns/waves-slate.webp",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-01.png",
+    "width": 1356,
+    "height": 1600,
+    "bytes": 188004,
+    "transformation": "Downsize full pattern; not verified seamless"
+  },
+  {
+    "path": "public/brand/patterns/waves-mist.webp",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-02.png",
+    "width": 1356,
+    "height": 1600,
+    "bytes": 225106,
+    "transformation": "Downsize full pattern; not verified seamless"
+  },
+  {
+    "path": "public/brand/patterns/waves-olive.webp",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-03.png",
+    "width": 1356,
+    "height": 1600,
+    "bytes": 143826,
+    "transformation": "Downsize full pattern; not verified seamless"
+  },
+  {
+    "path": "public/brand/patterns/waves-cream-mist.webp",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-04.png",
+    "width": 1356,
+    "height": 1600,
+    "bytes": 166608,
+    "transformation": "Downsize full pattern; not verified seamless"
+  },
+  {
+    "path": "public/brand/patterns/waves-cream-slate.webp",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-05.png",
+    "width": 1356,
+    "height": 1600,
+    "bytes": 278096,
+    "transformation": "Downsize full pattern; not verified seamless"
+  },
+  {
+    "path": "public/brand/illustrations/surfboard.webp",
+    "source": "ILUSTRACIONES/PNG/STICKERS-PENINSULA-02.png",
+    "width": 616,
+    "height": 900,
+    "bytes": 40738,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/illustrations/shaka.webp",
+    "source": "ILUSTRACIONES/PNG/STICKERS-PENINSULA-06.png",
+    "width": 900,
+    "height": 871,
+    "bytes": 72552,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/illustrations/wave.webp",
+    "source": "ILUSTRACIONES/PNG/STICKERS-PENINSULA-07.png",
+    "width": 900,
+    "height": 544,
+    "bytes": 72118,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/illustrations/palm.webp",
+    "source": "ILUSTRACIONES/PNG/STICKERS-PENINSULA-09.png",
+    "width": 900,
+    "height": 814,
+    "bytes": 56146,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/badges/badge-02.webp",
+    "source": "STICKERS & BADGES/PNG/BADGES-PENINSULA-02.png",
+    "width": 1000,
+    "height": 798,
+    "bytes": 75590,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/badges/badge-03.webp",
+    "source": "STICKERS & BADGES/PNG/BADGES-PENINSULA-03.png",
+    "width": 1000,
+    "height": 493,
+    "bytes": 73002,
+    "transformation": "Alpha crop and downsize if needed"
+  },
+  {
+    "path": "public/brand/favicon.png",
+    "source": "LOGO/PNG/LOGO-PENINSULA-38.png",
+    "width": 192,
+    "height": 192,
+    "bytes": 10108,
+    "transformation": "Square cream background and clear space added to icon"
+  }
+]

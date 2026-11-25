@@ -1,0 +1,34 @@
+/* Península: official brand-sheet hex values; web sizing from design standard. */
+:root {
+  --color-slate: #6e7c84;
+  --color-mist: #cdd7dc;
+  --color-olive: #929277;
+  --color-cream: #f4f0e9;
+  --color-brown: #675346;
+  --color-sand: #f8e9be;
+  --font-display: "SFC Bearwood", Georgia, serif;
+  --font-label: "SFC Woster Sans", system-ui, sans-serif;
+  --font-accent: "Aciella Script", cursive;
+  --font-body: system-ui, Arial, sans-serif;
+  --content-max: 1200px;
+  --gutter: clamp(20px, 4vw, 32px);
+  --section-space: clamp(40px, 7vw, 96px);
+  --radius: 8px;
+}
+/* Enable these declarations only after copying licensed fonts into public/brand/fonts/.
+@font-face {
+  font-family: "SFC Bearwood";
+  src: url("/brand/fonts/sfc-bearwood.woff2") format("woff2");
+  font-style: normal; font-weight: 400; font-display: swap;
+}
+@font-face {
+  font-family: "SFC Woster Sans";
+  src: url("/brand/fonts/sfc-woster-sans.woff2") format("woff2");
+  font-style: normal; font-weight: 400; font-display: swap;
+}
+@font-face {
+  font-family: "Aciella Script";
+  src: url("/brand/fonts/aciella-script-italic.otf") format("opentype");
+  font-style: italic; font-weight: 400; font-display: swap;
+}
+*/
