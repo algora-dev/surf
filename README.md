@@ -78,3 +78,6 @@ Read `docs/CONCIERGE-V11.md` first. Dedicated Supabase only; run `supabase/schem
 ## v1.2 owner calendar assistant (current release)
 
 Start with `docs/ADMIN-ASSISTANT-V12.md` (authoritative new demo, deployment, guardrails and acceptance tests). `/admin` supports a credential-free, explicitly enabled local/protected-preview demo with fictional browser-local data. Set `PENINSULA_DEMO_MODE=true` and `SITE_INDEXABLE=false`, then click Entrar (demo). Production requires real owner authentication. For live mode apply `supabase/upgrade-v12.sql` after the v1.1 migration. The owner assistant accepts typed and recorded Spanish instructions, transcribes to editable text and prepares a single validated change for explicit human confirmation; it cannot write without a server-held proposal and authenticated confirmation. Public website design, SEO pages and enquiry workflow remain v1.1. Do not deploy live or index until integration tests pass.
+
+## v1.3 bilingual admin
+See [ADMIN-V13](docs/ADMIN-V13.md) for the language switch, safe reset and updated acceptance tests. No new database migration.

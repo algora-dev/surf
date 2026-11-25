@@ -7,3 +7,6 @@ Read docs/CONCIERGE-V11.md before deployment. Keep Península in a dedicated Sup
 
 ## v1.2 update — highest-priority handover
 Read `docs/ADMIN-ASSISTANT-V12.md` first; it supersedes older admin deployment steps. Use a protected preview with `PENINSULA_DEMO_MODE=true`, `SITE_INDEXABLE=false` and no credentials for initial owner testing. When connecting the dedicated Supabase project, apply `schema.sql`, `upgrade-v11.sql`, `upgrade-v12.sql` (only missing migrations, in order). Turn demo off before live integration; never bypass authentication on a real database. Configure server-side OpenAI and transcription model keys; no secrets in source. Test owner-only proposal/confirm, replay/stale and overlap protection, voice, auth, grants, and real device workflow. Preserve all approved public pages, design, translations, SEO, media and customer enquiry system. Run `npm test`, `npm run typecheck`, `npm run build` and commit package lock before Vercel. Return protected preview URL and explicit test results; no final launch or index until owner approval.
+
+## v1.3 update
+Read `docs/ADMIN-V13.md` before deployment. English and Spanish admin, private assistant language and safe browser-only factory reset are added. No new migrations. For live integration test cleanup follow the dedicated test-project procedure; do not run reset on production or QuoteCore+.
