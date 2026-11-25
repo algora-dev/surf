@@ -21,7 +21,7 @@ begin
 end $$;
 -- The model cannot call this function. Only an authenticated explicit confirmation request can.
 create or replace function public.apply_admin_proposal(p_id uuid,p_owner uuid) returns jsonb language plpgsql security invoker set search_path='' as $$
-declare p public.admin_proposals%rowtype; c jsonb; a jsonb; prior jsonb; current_row jsonb; overlaps jsonb; bid uuid;
+declare p public.admin_proposals%rowtype; c jsonb; a jsonb; prior jsonb; current_row jsonb; overlap_rows jsonb; bid uuid;
 begin
  select * into p from public.admin_proposals where id=p_id and owner_id=p_owner for update;
  if not found then return jsonb_build_object('ok',false);end if;
@@ -36,8 +36,8 @@ begin
   if current_row is distinct from to_jsonb(jsonb_populate_record(null::public.calendar_blocks,prior)) then return jsonb_build_object('ok',false);end if;
  end if;
  if c->>'operation' in ('create','update') then
-  select coalesce(jsonb_agg(to_jsonb(b) order by b.id),'[]'::jsonb) into overlaps from public.calendar_blocks b where (bid is null or b.id<>bid) and b.starts_at<(a->>'ends_at')::timestamptz and b.ends_at>(a->>'starts_at')::timestamptz;
-  if overlaps is distinct from (select coalesce(jsonb_agg(to_jsonb(jsonb_populate_record(null::public.calendar_blocks,x)) order by x->>'id'),'[]'::jsonb) from jsonb_array_elements(c->'overlaps') as j(x)) then return jsonb_build_object('ok',false);end if;
+  select coalesce(jsonb_agg(to_jsonb(b) order by b.id),'[]'::jsonb) into overlap_rows from public.calendar_blocks b where (bid is null or b.id<>bid) and b.starts_at<(a->>'ends_at')::timestamptz and b.ends_at>(a->>'starts_at')::timestamptz;
+  if overlap_rows is distinct from (select coalesce(jsonb_agg(to_jsonb(jsonb_populate_record(null::public.calendar_blocks,x)) order by x->>'id'),'[]'::jsonb) from jsonb_array_elements(c->'overlaps') as j(x)) then return jsonb_build_object('ok',false);end if;
  end if;
  if c->>'operation'='create' then
   insert into public.calendar_blocks(kind,starts_at,ends_at,title,shareable,open_spots,group_level) values(a->>'kind',(a->>'starts_at')::timestamptz,(a->>'ends_at')::timestamptz,a->>'title',(a->>'shareable')::boolean,(a->>'open_spots')::int,a->>'group_level') returning id into bid;
