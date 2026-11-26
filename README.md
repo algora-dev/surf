@@ -1,3 +1,7 @@
+# v1.5 — deployment update
+
+See [docs/ASSISTANT-PWA-V15.md](docs/ASSISTANT-PWA-V15.md) for the latest changes, security note, installable admin and acceptance tests. Existing database and env configuration are retained.
+
 # Península Surf School — website v0.9
 
 Initial Next.js App Router / React / TypeScript website, using the supplied brand asset pack and legacy site's photographs and video. No price tables, checkout, booking backend, tracking, fake inventory or invented reviews. The WhatsApp conversation is an enquiry, not a confirmed booking.
@@ -84,3 +88,9 @@ See [ADMIN-V13](docs/ADMIN-V13.md) for the language switch, safe reset and updat
 
 ## v1.4 enquiry resilience
 See [ENQUIRY-MODE-V14](docs/ENQUIRY-MODE-V14.md). Apply `supabase/upgrade-v14.sql` after v1.2 on the dedicated Península database. Settings offers a confirmed bilingual Smart assistant / Direct WhatsApp selector. Public contact defaults to direct on missing settings or dependencies; the private assistant remains independent. Merge the focused v1.4 patch into the current deployment branch and verify the live tests before release.
+
+## v1.6 experience update
+See [Experience and deployment](docs/EXPERIENCE-V16.md). Adds multilingual surf coaching page, public assistant knowledge and intent routing, approved email enquiries, private notes and optional scheduled email reminders. Apply the v1.6 additive migration before deploying. Native push is a planned second phase. Existing PWA and WhatsApp fallback remain.
+
+## v1.7 — Spanish-first admin and language-aware concierge
+See [docs/LANGUAGE-TESTING-V17.md](docs/LANGUAGE-TESTING-V17.md) for the blue PWA icon, EN/ES/FR assistant control, Spanish wording, optional protected-preview testing diagnostics and deployment checks. No new schema migration beyond v1.6.

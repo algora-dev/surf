@@ -2,9 +2,9 @@ export const zone='America/Santo_Domingo';
 export const kinds=['lesson','rest','travel','off','busy','available'] as const;
 export type Kind=typeof kinds[number];
 export type Status=Kind|'weekend'|'unknown';
-export type Block={id:string;kind:Kind;starts_at:string;ends_at:string;title:string;enquiry_id:string|null;shareable?:boolean;group_level?:string;open_spots?:number};
+export type Block={id:string;kind:Kind;starts_at:string;ends_at:string;title:string;enquiry_id:string|null;shareable?:boolean;group_level?:string;open_spots?:number;private_notes?:string;payment_status?:string;reminder_minutes?:number|null};
 export type Hours={start_time:string;end_time:string;days:number[];configured:boolean;slow_weekend?:boolean};
-export type Enquiry={id:string;created_at:string;locale:'en'|'es'|'fr';service:number;name:string;phone:string;preferred_date:string|null;preferred_time:string;duration:string;group_size:string;experience:string;notes:string;email?:string;channel?:string;message?:string;calendar_id?:string|null;state:'new'|'replied'|'confirmed'|'closed'};
+export type Enquiry={id:string;created_at:string;locale:'en'|'es'|'fr';service:number;name:string;phone:string;preferred_date:string|null;preferred_time:string;duration:string;group_size:string;experience:string;notes:string;email?:string;channel?:string;message?:string;email_state?:'pending'|'accepted'|'failed';calendar_id?:string|null;state:'new'|'replied'|'confirmed'|'closed'};
 export const states=['new','replied','confirmed','closed'] as const;
 export const priority:Kind[]=['off','travel','lesson','busy','rest','available'];
 export function localParts(now:Date){const p=new Intl.DateTimeFormat('en-CA',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23',weekday:'short'}).formatToParts(now);const get=(k:string)=>p.find(x=>x.type===k)?.value||'';return {date:`${get('year')}-${get('month')}-${get('day')}`,time:`${get('hour')}:${get('minute')}`,day:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'))};}

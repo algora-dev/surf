@@ -1,5 +1,7 @@
 export type AdminLocale='es'|'en';
 const english:Record<string,string>={
+  "La voz prepara una propuesta automáticamente. Solo tú puedes confirmar el cambio.":"Voice automatically prepares a proposal. Only you can confirm the change.",
+  "También puedes escribir «Sí» o «Confirmar».":"You can also type ‘Yes’ or ‘Confirm’.",
   "Disponible": "Available",
   "Clase de surf": "Surf lesson",
   "Descanso": "Rest",
@@ -185,4 +187,14 @@ const english:Record<string,string>={
   "Consulta de ejemplo: 2 personas, principiantes, interesados en una clase grupal.": "Example enquiry: 2 beginners interested in a group lesson.",
   "evento(s).": "event(s)."
 };
-export function adminText(locale:AdminLocale,text:string){return locale==='en'?(english[text]??text):text;}
+// Keep the original keys stable for error translation, but prefer everyday Dominican Spanish in the interface.
+const spanish:Record<string,string>={
+ '+ Añadir evento':'+ Agregar a mi agenda', 'Nuevo evento':'Nuevo bloque', 'Editar evento':'Editar horario', 'Guardar evento':'Guardar en agenda',
+ 'Inicio':'Desde', 'Fin':'Hasta', 'Descanso':'Descanso', 'Ir a fecha':'Elegir día', 'Ofrecer este grupo a más surfistas':'¿Pueden unirse más surfistas?', 'Plazas adicionales':'Cupos libres', 'plazas':'cupos',
+ 'Confirmar reserva':'Agendar reserva', 'Reserva acordada':'Agendar clase acordada', 'Clase nueva o grupo existente':'¿Clase nueva o agregar a un grupo?', 'Nueva reserva':'Clase nueva', 'Nuevos participantes':'Personas que se unen', 'Nombre / lugar':'Nombre o lugar (opcional)',
+ 'WhatsApp preparado; no se verifica el envío.':'Consulta lista para WhatsApp. El cliente debe enviarla.', 'Consulta sin nombre':'Nueva consulta', 'Respondida':'Respondí', 'Ver cerrados':'Ver archivadas', 'Cerrar':'Archivar',
+ 'Horario habitual':'Mi horario de atención', 'Guardar horario':'Guardar mi horario', 'Respondo más despacio los fines de semana':'Tardo más en responder los fines de semana',
+ 'Esto es lo que entendí. Revisa los detalles antes de confirmar.':'¿Así está bien? Revisa y confirma.', 'Revisa antes de guardar':'Revisa y confirma', 'Confirmar cambio':'Confirmar y guardar', 'Listo. El cambio está guardado en tu agenda.':'Listo, guardado en tu agenda.',
+ '✦ Hablar con mi asistente':'✦ Hablar con mi asistente', 'Escribe o dicta. Tú confirmas cada cambio.':'Habla o escribe. Tú decides qué se guarda.', '🎙 Dictar':'🎙 Hablar', 'También puedes escribir «Sí» o «Confirmar».':'También puedes escribir «sí» o «dale».', 'Tu mensaje':'Escribe o habla', 'Procesando…':'Un momento…'
+};
+export function adminText(locale:AdminLocale,text:string){return locale==='en'?(english[text]??text):(spanish[text]??text);}
