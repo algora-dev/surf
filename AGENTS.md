@@ -49,6 +49,6 @@ Preserve the owner-approved three-photo guided trip carousel and shared gallery 
 
 ## v2.6 refinements
 - Public concierge should ask useful questions directly, without repeated Great/Nice/Perfect openers. Use the supplied original stickers sparingly; preserve review and handoff guardrails.
-- Hero video requests muted inline autoplay; never override user/browser autoplay or reduced-motion preferences.
+- Hero video requests muted inline autoplay for ALL visitors, including prefers-reduced-motion users (owner override, Shaun 2026-11-27). Do not re-add the reduced-motion pause; the manual play/pause button remains the user's control.
 - Public service cards have one shared booking CTA under Surf Lessons (general assistant), three inline Learn More links and the unchanged rental button.
 - Font setup: follow docs/REFINEMENTS-V26.md; use only owner-supplied web-licensed assets, not substitutes. Keep font binaries out of unlicensed/public handovers.

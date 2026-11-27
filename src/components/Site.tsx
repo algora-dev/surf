@@ -19,13 +19,12 @@ export default class Site extends React.Component<Props,State>{
  video:HTMLVideoElement|null=null;
  videoStarted=false;
  videoManual=false;
- reduceMotion=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- tryAutoplay=()=>{const v=this.video;if(!v||this.videoManual||this.videoStarted||document.hidden||this.reduceMotion())return;v.defaultMuted=true;v.muted=true;v.playsInline=true;v.play().catch(()=>{/* browser policy: leave manual play available */});};
- onHeroPlay=()=>{if(!this.videoManual&&this.reduceMotion()){this.video?.pause();return;}this.videoStarted=true;this.setState({playing:true});};
+ tryAutoplay=()=>{const v=this.video;if(!v||this.videoManual||this.videoStarted||document.hidden)return;v.defaultMuted=true;v.muted=true;v.playsInline=true;v.play().catch(()=>{/* browser policy: leave manual play available */});};
+ onHeroPlay=()=>{this.videoStarted=true;this.setState({playing:true});};
  enquiryPending=false;
  enquiryIndex=()=>this.props.page==='rental'?5:this.props.page==='beginner'?1:this.props.page==='coaching'?2:this.props.page==='guided'?3:this.props.page==='clothing'?6:this.props.page==='boards'?4:0;
  contact=async(e:React.MouseEvent<HTMLAnchorElement>,index:number)=>{if(this.props.preview||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();if(this.enquiryPending)return;this.enquiryPending=true;const direct=this.wa(index);try{const r=await fetch('/api/enquiry-mode',{cache:'no-store',signal:AbortSignal.timeout(3500)});if(r.ok&&(await r.json()).mode==='smart'){this.setState({enquiry:index});return;}}catch{/* direct contact works even if the backend is offline */}finally{this.enquiryPending=false;}window.location.assign(direct);};
- setVideo=(element:HTMLVideoElement|null)=>{this.video=element;if(element){element.defaultMuted=true;element.muted=true;element.playsInline=true;if(this.reduceMotion()){element.autoplay=false;element.pause();}}};
+ setVideo=(element:HTMLVideoElement|null)=>{this.video=element;if(element){element.defaultMuted=true;element.muted=true;element.playsInline=true;}};
  scroll=()=>{const scrolled=window.scrollY>24;if(scrolled!==this.state.scrolled)this.setState({scrolled});};
  keyDown=(event:KeyboardEvent)=>{if(event.key==='Escape'){this.setState({menu:false});document.querySelector<HTMLDetailsElement>('.shop-menu[open]')?.removeAttribute('open');}};
  componentDidMount(){this.scroll();window.addEventListener('scroll',this.scroll,{passive:true});window.addEventListener('keydown',this.keyDown);document.addEventListener('visibilitychange',this.tryAutoplay);window.addEventListener('pageshow',this.tryAutoplay);this.tryAutoplay();}
