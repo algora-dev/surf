@@ -275,3 +275,27 @@ h1,h2,h3{color:var(--color-slate)}
 .lesson-carousel{position:relative;width:100%;min-width:0;align-self:center}.lesson-carousel-frame{position:relative;aspect-ratio:4/3;width:100%;overflow:hidden;border-radius:var(--radius);background:var(--color-cream)}.lesson-slide{position:absolute;inset:0;opacity:0;transition:opacity .55s ease;pointer-events:none}.lesson-slide.active{opacity:1;z-index:1}.lesson-slide img{width:100%;height:100%;object-fit:contain;display:block}.lesson-carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px}.lesson-carousel-controls button{background:var(--slate-action);color:var(--color-cream);border:1px solid var(--slate-action);border-radius:var(--radius);width:44px;min-height:44px;font-size:25px;line-height:1;cursor:pointer}.lesson-carousel-controls button:hover,.lesson-carousel-controls button:focus-visible{background:var(--color-mist);color:var(--slate-ink);border-color:var(--slate-ink)}.lesson-slide-count{font-size:14px;min-width:48px;text-align:center;color:var(--slate-ink);font-variant-numeric:tabular-nums}.page-guided .landing-hero{background:var(--color-mist)}
 @media(prefers-reduced-motion:reduce){.lesson-slide,.service-photo img{transition:none}}
 .lesson-slide.landscape img{object-fit:cover}.lesson-slide.portrait img{object-fit:contain}
+
+/* v2.2 — shared photo galleries, compact rental page, and spaced related actions. */
+.lesson-carousel-frame{background:var(--color-mist);isolation:isolate}
+.lesson-slide-backdrop{position:absolute;inset:-18px;background-position:center;background-size:cover;filter:blur(20px) brightness(.72);transform:scale(1.08)}
+.lesson-slide img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain}
+.lesson-slide.landscape img{object-fit:cover}
+.lesson-carousel-controls{gap:12px;margin-top:14px;flex-wrap:wrap}
+.lesson-carousel-controls button{display:inline-grid;place-items:center;width:44px;height:44px;min-height:44px;border-radius:50%;padding:0;background:var(--slate-action);color:var(--color-cream);border:1px solid var(--slate-action)}
+.lesson-carousel-controls button svg{display:block;flex-shrink:0}
+.lesson-carousel-controls button:hover,.lesson-carousel-controls button:focus-visible{background:var(--color-mist);color:var(--slate-ink);border-color:var(--slate-ink)}
+.lesson-carousel-controls button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.lesson-slide-count{min-width:52px}
+.page-boards .boards-hero .lesson-carousel-controls button{background:var(--color-cream);color:var(--slate-ink);border-color:var(--color-cream)}
+.page-boards .boards-hero .lesson-carousel-controls button:hover,.page-boards .boards-hero .lesson-carousel-controls button:focus-visible{background:var(--color-mist);color:var(--slate-ink);border-color:var(--color-mist)}
+.page-boards .boards-hero .lesson-slide-count,.page-boards .boards-hero .board-gallery-caption{color:var(--color-cream)}
+.board-gallery{min-width:0;width:100%}.board-gallery-caption{font-size:.85rem;text-align:center;margin-top:10px}
+.landing-related>.wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px}
+.landing-related .button{padding-inline:24px;white-space:normal;max-width:100%}
+.page-rental .landing-details{grid-template-columns:repeat(2,minmax(0,1fr));padding-block:clamp(36px,5vw,64px)}
+@media(max-width:720px){.page-rental .landing-details{grid-template-columns:1fr}.landing-related>.wrap{gap:12px}.landing-related .button{padding-inline:18px}.lesson-carousel-controls{gap:10px}}
+@media(prefers-reduced-motion:reduce){.lesson-slide{transition:none}}
+
+/* v2.3 — concise beginner lesson information; retain the three-column layout. */
+.page-beginner .landing-details{padding-block:clamp(36px,5vw,64px)}

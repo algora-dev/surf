@@ -1,0 +1,12 @@
+# Península v2.2 — service policies and galleries
+Baseline: v2.1 supplied source. No database migration, new dependency or environment variable.
+
+- Beginner hero: 10 existing photos; shared carousel with a 3.575-second interval (35% shorter than 5.5 seconds), smooth crossfade, blurred photo backdrop for portrait images, SVG arrows, pause/play, reduced-motion support. Manual navigation pauses playback.
+- Board sales hero: 12 optimised photos supplied in Images2.zip, same component. Images are examples only; ask Cristian about current stock. Board page enquiries preselect board sales; existing rental anchor remains available.
+- Rental page: concise hero and two brief sections covering approved board range, one-hour minimum, hourly/half-day/full-day/longer rentals, Playa Bonita collection and personal quote. Removed repeated explanatory sections/FAQ from this landing page; homepage still answers rental questions.
+- Homepage, beginner page, coaching page, final enquiry message and fallback form follow the two-hour standard. Nonstandard durations are requests to discuss, not published packages. Guided trips remain flexible.
+- Central EN/ES/FR policies and deterministic FAQ responses for lesson duration, rental terms and purchasing Milano/custom boards. Information-only queries remain informational; customer still controls final WhatsApp/email handoff. All prices/stock/schedules/custom arrangements remain subject to Cristian's confirmation.
+- No changes to admin authentication, assistant permissions, PWA, email delivery, data storage, or existing URLs.
+
+## Agent acceptance
+Merge against live repo, preserving deployment changes. Run npm ci, npm test (8 suites), npm run typecheck, npm run build. Check the two carousels on mobile and desktop, including autoplay and controls. Test actual public AI questions in all three languages: lesson duration, alternative duration, 30-minute rental (minimum 1h), hourly/half-day/full-day/multiday rental, pickup, soft/hard/long/short boards, Milano stock and custom orders. Test WhatsApp/email review and no-automatic-booking safeguard. Verify owner permission for supplied photos before publishing. The local full Next.js build and live AI requests could not be verified (npm cache incomplete). Existing and new mocked tests passed; visual checks used a separate browser harness and were interrupted when navigating to further locales. English desktop/mobile previews were rendered for all three changed pages.

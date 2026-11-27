@@ -97,3 +97,6 @@ See [docs/LANGUAGE-TESTING-V17.md](docs/LANGUAGE-TESTING-V17.md) for the blue PW
 
 ## v2.1 public service navigation and photography
 Four homepage service cards and a dedicated guided trips page in EN/ES/FR. The beginner hero has a ten-image carousel with a 5.5-second advance interval, smooth crossfade, manual arrows, pause/play and reduced-motion support. All supplied photography is optimized as WebP; confirm publication permissions before launch. No migrations or new dependencies. See [docs/SERVICE-CARDS-V21.md](docs/SERVICE-CARDS-V21.md).
+
+### v2.2 service policy and gallery update
+See `docs/SERVICE-POLICIES-V22.md` for approved two-hour lesson rules, streamlined rental/sales content, shared carousel, knowledge base and agent acceptance checks. No new infrastructure required.

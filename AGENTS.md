@@ -33,3 +33,13 @@ Read `docs/VISUAL-REFINEMENT-V18.md`. The official palette in `src/styles/brand.
 
 ## v2.1 approved service navigation and lesson photography
 Four homepage cards: beginner lessons, private coaching, guided trips and rentals. Keep image and heading links localized, the first three enquiry actions, and the rental action linked to the rental page. The lower board tile is for sales and links to #sale; preserve the existing catalogue and rental links elsewhere. The beginner carousel shares the homepage instruction image first and includes all seven supplied new photos and all three existing homepage gallery images (ten total). Preserve fixed frame sizing, manual arrows, pause/play and reduced-motion support. Use only permission-cleared photos in production, especially those showing children. Preserve v2.0 palette, header and hero. No database or dependency changes.
+
+## v2.2: owner-approved service rules
+- Normal surf lessons and coaching last two hours unless Cristian agrees to a different arrangement. Do not present alternative lengths as standard lesson products or ask duration unnecessarily.
+- Rental minimum is one hour. Hourly, half-day, full-day and longer-term rentals (by agreement); normal pickup Playa Bonita. New high-quality soft tops, hard tops, longboards and shortboards, subject to availability.
+- Sales cover various brands, specialising in Milano surfboards. Contact Cristian for current stock and custom orders; photos are examples, not live inventory. No AI-generated prices or booking guarantees.
+- Central multilingual policy copy lives in `src/lib/concierge.ts` (`servicePolicy`) and is used by page FAQs and assistant knowledge. Preserve consistency when editing.
+- Both image galleries share `LessonCarousel`, 3575 ms autoplay, original photo proportions, blurred image backdrop, accessible round controls and reduced-motion support. No cream/white side bars. Keep horizontal spacing between related CTAs.
+
+## v2.3 — concise beginner page
+Keep the beginner landing page to its existing hero/carousel, three short information blocks (first lesson, private/shared options, and location), and the existing closing enquiry CTA. Do not reintroduce the lengthy FAQ or related-services strip here. Retain the homepage FAQ, knowledge base, localized routes and metadata; refer detailed questions to the concierge or Cristian. Standard lessons remain two hours unless arranged otherwise. No database or dependency changes.

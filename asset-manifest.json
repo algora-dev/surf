@@ -81,7 +81,7 @@
   },
   {
     "path": "public/brand/patterns/waves-slate.webp",
-    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-01.png",
+    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-01.png",
     "width": 1356,
     "height": 1600,
     "bytes": 188004,
@@ -89,7 +89,7 @@
   },
   {
     "path": "public/brand/patterns/waves-mist.webp",
-    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-02.png",
+    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-02.png",
     "width": 1356,
     "height": 1600,
     "bytes": 225106,
@@ -97,7 +97,7 @@
   },
   {
     "path": "public/brand/patterns/waves-olive.webp",
-    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-03.png",
+    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-03.png",
     "width": 1356,
     "height": 1600,
     "bytes": 143826,
@@ -105,7 +105,7 @@
   },
   {
     "path": "public/brand/patterns/waves-cream-mist.webp",
-    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-04.png",
+    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-04.png",
     "width": 1356,
     "height": 1600,
     "bytes": 166608,
@@ -113,7 +113,7 @@
   },
   {
     "path": "public/brand/patterns/waves-cream-slate.webp",
-    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-05.png",
+    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-05.png",
     "width": 1356,
     "height": 1600,
     "bytes": 278096,
@@ -230,5 +230,101 @@
     "height": 900,
     "bytes": 272028,
     "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/boards-gallery/board-01.webp",
+    "source": "Images2.zip / Images2/0363ee65-666b-408f-bcc5-9a16dc53f74f.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 222808,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-02.webp",
+    "source": "Images2.zip / Images2/0bf29b5d-156c-421e-a6e6-8256e4b30e3e.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 355564,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-03.webp",
+    "source": "Images2.zip / Images2/1b064324-7fe9-41be-a547-49e5ed0b8580.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 340728,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-04.webp",
+    "source": "Images2.zip / Images2/25ea793e-37f9-4078-9131-822938f1c525.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 149720,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-05.webp",
+    "source": "Images2.zip / Images2/5dfb1885-58c8-451e-a199-e52848d35f2d.jpg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 75964,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-06.webp",
+    "source": "Images2.zip / Images2/5e9230e8-506a-48a0-a7c8-5e01fc062f88.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 74886,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-07.webp",
+    "source": "Images2.zip / Images2/7a9900cb-bc3b-4990-824d-b26d9958591f.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 138136,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-08.webp",
+    "source": "Images2.zip / Images2/7d274c85-e1c4-4202-90cf-8b81a7f747d8.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 137010,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-09.webp",
+    "source": "Images2.zip / Images2/c398d91c-ea1e-42f7-92e6-988710c48194.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 261268,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-10.webp",
+    "source": "Images2.zip / Images2/cb69de75-b27a-406a-a8e9-df2e32a48a8c.jpg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 185020,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-11.webp",
+    "source": "Images2.zip / Images2/dabd517b-cde6-4501-8a66-716efe320673.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 145256,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/boards-gallery/board-12.webp",
+    "source": "Images2.zip / Images2/e0efe4bb-4398-42ab-a186-450b40bb74c4.jpg",
+    "width": 720,
+    "height": 1280,
+    "bytes": 247226,
+    "transformation": "EXIF orientation and WebP compression; no crop"
   }
 ]
