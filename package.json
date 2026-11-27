@@ -9,13 +9,14 @@
     "typecheck": "tsc --noEmit",
     "test:booking": "node --experimental-strip-types --disable-warning=ExperimentalWarning tests/booking.test.mts",
     "test:concierge": "node --experimental-strip-types --disable-warning=ExperimentalWarning tests/concierge.test.mts",
-    "test": "npm run test:booking && npm run test:concierge && npm run test:admin && npm run test:mode && npm run test:efficiency && npm run test:experience && npm run test:language && npm run test:policies",
+    "test": "npm run test:booking && npm run test:concierge && npm run test:admin && npm run test:mode && npm run test:efficiency && npm run test:experience && npm run test:language && npm run test:policies && npm run test:refinements",
     "test:admin": "node tests/admin-assistant.test.cjs",
     "test:mode": "node tests/enquiry-mode.test.cjs",
     "test:efficiency": "node tests/assistant-efficiency.test.cjs",
     "test:experience": "node tests/v16-experience.test.cjs",
     "test:language": "node tests/v17-language-trace.test.cjs",
-    "test:policies": "node tests/v22-service-policies.test.cjs"
+    "test:policies": "node tests/v22-service-policies.test.cjs",
+    "test:refinements": "node tests/v26-refinements.test.cjs"
   },
   "engines": {
     "node": ">=20.9.0"

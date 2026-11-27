@@ -308,3 +308,20 @@ h1,h2,h3{color:var(--color-slate)}
 .story-post:hover,.story-post:focus-visible{background:var(--color-cream);color:var(--slate-ink);}
 .story-post:focus-visible{outline:2px solid var(--slate-action);outline-offset:3px;}
 .story-grid{padding:4px 4px 12px;}
+
+/* v2.6: shared surf enquiry, relaxed concierge, clothing colour refinement. */
+.service-learn-more{display:inline;font-weight:600;text-decoration:underline;text-underline-offset:3px;color:var(--slate-action);white-space:normal}
+.service-learn-more:hover{color:var(--slate-ink);text-decoration-thickness:2px}
+.service-actions:empty{display:none}
+.service-actions .service-book{width:100%;justify-content:center;text-align:center;white-space:normal;line-height:1.3}
+.page-home .clothing-tile{background:var(--color-mist);color:var(--slate-action)}
+.page-home .clothing-tile h3{color:var(--slate-action)}
+.page-home .clothing-tile:hover,.page-home .clothing-tile:focus-visible{background:#fff;color:var(--slate-action)}
+.page-home .clothing-tile:hover h3,.page-home .clothing-tile:focus-visible h3{color:var(--slate-action)}
+.concierge-heading{display:flex;align-items:center;gap:12px;padding-right:28px}
+.concierge-heading h2{margin-bottom:0}
+.concierge-sticker{width:48px;height:48px;object-fit:contain;flex:none}
+.concierge-review-heading{display:flex;align-items:center;gap:10px}
+.concierge-review-heading p{flex:1;margin:0}
+.concierge-review-heading img{width:52px;height:32px;object-fit:contain;flex:none}
+@media(max-width:480px){.concierge-sticker{width:40px;height:40px}.concierge-heading{gap:8px}}

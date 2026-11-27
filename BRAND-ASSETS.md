@@ -12,9 +12,9 @@ Companion to `Peninsula_Website_Design_Standard.pdf` (kept separately). Prepared
 - Illustrations: surfboard, shaka, wave and palm. Badges 02 and 03 only. Do not use badges 06/07 or other inconsistent dates until the owner confirms EST. 2026 vs 2013.
 - Favicon: square cream background with the original slate icon. No text or year added.
 
-## Fonts — manual copy required
+## Fonts — owner-supplied installation required
 
-No font binaries are included. The original archive already contains the files below. Confirm web embedding rights with the owner/designer before deploying or adding to GitHub; no licence document was found in the supplied archive. After confirmation, copy and rename these into `public/brand/fonts/`, then uncomment the @font-face declarations in `brand.css`.
+No font binaries are included. The original archive already contains the files below. Confirm web embedding rights with the owner/designer before deploying or adding to GitHub; no licence document was found in the supplied archive. After confirmation, run `python3 scripts/install-brand-fonts.py /path/to/original-fonts.zip --licensed` to install and activate the fonts. See `docs/REFINEMENTS-V26.md`.
 
 | Source in original ZIP | Target filename |
 | --- | --- |

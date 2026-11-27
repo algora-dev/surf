@@ -44,7 +44,7 @@ Routes: /en, /en/surfboards, /en/clothing; /es, /es/tablas, /es/ropa; /fr, /fr/p
 
 ## Fonts and launch checklist
 
-This version uses fallback Georgia and system sans-serif for text, and the original logo artwork. Font binaries are intentionally not included. If the school has appropriate webfont licensing, copy the original SFC Bearwood WOFF2, SFC Woster Sans WOFF2, and Aciella Script Italic OTF into `public/brand/fonts` on your own machine, using the filenames in `brand.css`. Enable the commented @font-face declarations, review Spanish/French glyph coverage and font layout, and decide how to deliver the licensed fonts to Vercel. The fonts folder is gitignored by default; only adjust that if the licence permits your intended repository/deployment use.
+The official font setup is automated in v2.6. See `docs/REFINEMENTS-V26.md` and run `python3 scripts/install-brand-fonts.py /path/to/original-fonts.zip --licensed` after confirming web embedding rights. Until then the site uses fallback fonts. Font binaries are not included in the handover.
 
 Before public launch: approve the translations, confirm WhatsApp details and instructor/service content, confirm teaching locations, get actual product listings and reviews, confirm media rights and the establishment year, add reviewed localized privacy/terms pages (not ported from the old website because they need updating), install and test licensed fonts, provide final videos and check page metadata, contrast, keyboard navigation, performance, and real-device video playback. No live website has been deployed.
 

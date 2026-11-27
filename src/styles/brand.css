@@ -1,3 +1,4 @@
+@import "./fonts.local.css";
 /* Península: official brand-sheet hex values; web sizing from design standard. */
 :root {
   --color-slate: #6E7C84;
@@ -18,20 +19,4 @@
   --section-space: clamp(40px, 7vw, 96px);
   --radius: 8px;
 }
-/* Enable these declarations only after copying licensed fonts into public/brand/fonts/.
-@font-face {
-  font-family: "SFC Bearwood";
-  src: url("/brand/fonts/sfc-bearwood.woff2") format("woff2");
-  font-style: normal; font-weight: 400; font-display: swap;
-}
-@font-face {
-  font-family: "SFC Woster Sans";
-  src: url("/brand/fonts/sfc-woster-sans.woff2") format("woff2");
-  font-style: normal; font-weight: 400; font-display: swap;
-}
-@font-face {
-  font-family: "Aciella Script";
-  src: url("/brand/fonts/aciella-script-italic.otf") format("opentype");
-  font-style: italic; font-weight: 400; font-display: swap;
-}
-*/
+/* Licensed font faces are provisioned by scripts/install-brand-fonts.py. */
