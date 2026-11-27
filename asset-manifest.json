@@ -174,5 +174,61 @@
     "height": 192,
     "bytes": 10108,
     "transformation": "Square cream background and clear space added to icon"
+  },
+  {
+    "path": "public/media/lessons-gallery/beach-group-warmup.webp",
+    "source": "WhatsApp Image 2026-11-27 at 10.54.53 AM.jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 226456,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/one-to-one-beach-instruction.webp",
+    "source": "WhatsApp Image 2026-11-27 at 11.05.52 AM.jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 255942,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/group-beach-briefing.webp",
+    "source": "8fa4d64b-6b56-4fc5-96be-b1988af0a299.jpg",
+    "width": 1280,
+    "height": 854,
+    "bytes": 98108,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/group-pop-up-practice.webp",
+    "source": "38a0925b-45e6-4300-831c-af0f5d23569c.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 175610,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/young-surfers-with-boards.webp",
+    "source": "a857a188-6b62-43ab-aa2f-1cc67c350ab0.jpg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 331218,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/surf-lesson-from-above.webp",
+    "source": "WhatsApp Image 2026-11-27 at 11.18.23 AM.jpeg",
+    "width": 1600,
+    "height": 941,
+    "bytes": 296080,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
+  },
+  {
+    "path": "public/media/lessons-gallery/surfers-with-green-boards.webp",
+    "source": "WhatsApp Image 2026-11-27 at 11.18.55 AM.jpeg",
+    "width": 1600,
+    "height": 900,
+    "bytes": 272028,
+    "transformation": "EXIF orientation, resize to 1600px maximum, WebP; no retouching"
   }
 ]

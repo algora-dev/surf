@@ -22,3 +22,14 @@ Read `docs/EXPERIENCE-V16.md`. Preserve live deployment fixes. Apply `supabase/u
 
 ## v1.7 integration
 Read `docs/LANGUAGE-TESTING-V17.md`. Preserve v1.6 functionality and existing deployment fixes. Never enable synthetic transcript logs with real data. Protect preview access and keep production diagnostics off. Verify live multilingual chat, Spanish admin, PWA icons and build before merge.
+
+## v1.8 — visual refinement, baseline fd79ca7
+Read `docs/VISUAL-REFINEMENT-V18.md`. The official palette in `src/styles/brand.css` is immutable unless the owner explicitly approves a brand change. Blue-led does not mean blue-only: use original Ocean Slate and Sea Mist, warm cream, and restrained Earth Brown accents. The four supplied contour WebPs are the only public patterns approved for this release; do not substitute synthetic SVGs, recolour logo artwork, or tile patterns over body copy. Preserve the approved hero artwork (see v2.0 below), watermark timing, layouts, typography, all multilingual content, assistant/admin features and deployment fixes. Scope this update to styling and decorative page classes. No dependency or database changes. Run the existing tests, typecheck, build and review the deployed preview before merge.
+
+## v2.0 approved visual refinements
+- Header is permanently opaque --slate-action (#56656E), without shadows or backdrop blur.
+- Public primary actions use the same token; on dark blue surfaces use cream reverse actions. Hover is Sea Mist with dark slate text.
+- Homepage lesson card uses the same instruction.webp image as the beginner landing page. Hero uses the original primary-cream logo; preserve watermark animation.
+
+## v2.1 approved service navigation and lesson photography
+Four homepage cards: beginner lessons, private coaching, guided trips and rentals. Keep image and heading links localized, the first three enquiry actions, and the rental action linked to the rental page. The lower board tile is for sales and links to #sale; preserve the existing catalogue and rental links elsewhere. The beginner carousel shares the homepage instruction image first and includes all seven supplied new photos and all three existing homepage gallery images (ten total). Preserve fixed frame sizing, manual arrows, pause/play and reduced-motion support. Use only permission-cleared photos in production, especially those showing children. Preserve v2.0 palette, header and hero. No database or dependency changes.

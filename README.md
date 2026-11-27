@@ -94,3 +94,6 @@ See [Experience and deployment](docs/EXPERIENCE-V16.md). Adds multilingual surf 
 
 ## v1.7 — Spanish-first admin and language-aware concierge
 See [docs/LANGUAGE-TESTING-V17.md](docs/LANGUAGE-TESTING-V17.md) for the blue PWA icon, EN/ES/FR assistant control, Spanish wording, optional protected-preview testing diagnostics and deployment checks. No new schema migration beyond v1.6.
+
+## v2.1 public service navigation and photography
+Four homepage service cards and a dedicated guided trips page in EN/ES/FR. The beginner hero has a ten-image carousel with a 5.5-second advance interval, smooth crossfade, manual arrows, pause/play and reduced-motion support. All supplied photography is optimized as WebP; confirm publication permissions before launch. No migrations or new dependencies. See [docs/SERVICE-CARDS-V21.md](docs/SERVICE-CARDS-V21.md).

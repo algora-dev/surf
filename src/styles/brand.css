@@ -1,11 +1,14 @@
 /* Península: official brand-sheet hex values; web sizing from design standard. */
 :root {
-  --color-slate: #2F4E6B;
-  --color-mist: #C9D8E8;
-  --color-olive: #A9C3DB;
-  --color-cream: #EEF3F8;
-  --color-brown: #1E3A54;
-  --color-sand: #D7E3F0;
+  --color-slate: #6E7C84;
+  --color-mist: #CDD7DC;
+  --color-olive: #929277;
+  --color-cream: #F4F0E9;
+  --color-brown: #675346;
+  --color-sand: #F8E9BE;
+  /* Derived accessible blue shades, not replacement brand colours. */
+  --slate-ink: #4D5B64;
+  --slate-action: #56656E;
   --font-display: "SFC Bearwood", Georgia, serif;
   --font-label: "SFC Woster Sans", system-ui, sans-serif;
   --font-accent: "Aciella Script", cursive;
