@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img" aria-label="Peninsula wave pattern">
+  <rect width="480" height="480" fill="#2F4E6B"/>
+  <g fill="none" stroke="#3B5A7A" stroke-width="6" stroke-linecap="round">
+    <path d="M0 60 Q120 10 240 60 T480 60"/>
+    <path d="M0 156 Q120 106 240 156 T480 156"/>
+    <path d="M0 252 Q120 202 240 252 T480 252"/>
+    <path d="M0 348 Q120 298 240 348 T480 348"/>
+    <path d="M0 444 Q120 394 240 444 T480 444"/>
+    <ellipse cx="150" cy="200" rx="34" ry="20" transform="rotate(-8 150 200)"/>
+    <ellipse cx="360" cy="300" rx="28" ry="16" transform="rotate(10 360 300)"/>
+    <ellipse cx="90" cy="400" rx="22" ry="13" transform="rotate(-6 90 400)"/>
+  </g>
+</svg>
