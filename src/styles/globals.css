@@ -299,3 +299,12 @@ h1,h2,h3{color:var(--color-slate)}
 
 /* v2.3 — concise beginner lesson information; retain the three-column layout. */
 .page-beginner .landing-details{padding-block:clamp(36px,5vw,64px)}
+
+/* V2.5 — original Instagram post covers, edge crops only. */
+.story-post{display:block;border-radius:var(--radius);overflow:hidden;color:var(--slate-ink);text-decoration:none;transition:background-color .2s ease;}
+.story-post .story-image{aspect-ratio:3/4;object-fit:contain;background:transparent;border-radius:var(--radius);height:auto;}
+.story-post-label{display:flex;align-items:center;gap:8px;padding:12px 10px;font-size:13px;line-height:1.4;}
+.story-post-label>svg:last-child{margin-left:auto;flex-shrink:0;}
+.story-post:hover,.story-post:focus-visible{background:var(--color-cream);color:var(--slate-ink);}
+.story-post:focus-visible{outline:2px solid var(--slate-action);outline-offset:3px;}
+.story-grid{padding:4px 4px 12px;}

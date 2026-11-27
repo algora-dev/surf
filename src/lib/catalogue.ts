@@ -2,10 +2,14 @@ import type {Locale} from './content';
 // No invented inventory or reviews. Add confirmed records here and provide all three translations.
 type Localized = Record<Locale,string>;
 export type Product = {id:string; name:Localized; description:Localized; image:string; category:'sale'|'rent'|'clothing'; details?: Localized; availability?: Localized};
-// A permission-cleared reposted Instagram story, stored locally (not an expiring embed).
+// Curated Instagram posts or stories, stored locally (not expiring embeds).
 export type Review = {id:string; name:string; image:string; alt:Localized; caption?:Localized; sourceUrl?:string};
 export const products: Product[] = [];
-export const reviews: Review[] = [];
+export const reviews: Review[] = [
+ {id:'surf-vlog',name:'Surf vlog en RD',image:'/media/community/surf-vlog.webp',sourceUrl:'https://www.instagram.com/p/DesBO2KzLs3/',alt:{en:'Surf vlog in the Dominican Republic with Península',es:'Surf vlog en República Dominicana con Península',fr:'Vlog de surf en République dominicaine avec Península'}},
+ {id:'surf-postcards',name:'Surf postcards from Las Terrenas, Samaná',image:'/media/community/surf-postcards.webp',sourceUrl:'https://www.instagram.com/p/DZasgaSm4ob/',alt:{en:'Surf postcards from Las Terrenas, Samaná',es:'Postales de surf de Las Terrenas, Samaná',fr:'Cartes postales de surf de Las Terrenas, Samaná'}},
+ {id:'learn-to-surf',name:'5 razones para comenzar a surfear',image:'/media/community/learn-to-surf.webp',sourceUrl:'https://www.instagram.com/p/DYhsBb7EcIz/',alt:{en:'Five reasons to start surfing in the Dominican Republic',es:'Cinco razones para comenzar a surfear en República Dominicana',fr:'Cinq raisons de commencer le surf en République dominicaine'}}
+];
 
 // Concept images from the original brand kit are not actual inventory. They are displayed only in previews.
 export const shopCopy = {

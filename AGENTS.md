@@ -43,3 +43,6 @@ Four homepage cards: beginner lessons, private coaching, guided trips and rental
 
 ## v2.3 — concise beginner page
 Keep the beginner landing page to its existing hero/carousel, three short information blocks (first lesson, private/shared options, and location), and the existing closing enquiry CTA. Do not reintroduce the lengthy FAQ or related-services strip here. Retain the homepage FAQ, knowledge base, localized routes and metadata; refer detailed questions to the concierge or Cristian. Standard lessons remain two hours unless arranged otherwise. No database or dependency changes.
+
+## v2.4 media rules
+Preserve the owner-approved three-photo guided trip carousel and shared gallery controls. Use the new optimized hero MP4 files and poster; do not commit the raw MOV or reintroduce the old video. Keep the existing hero logo and fade. See docs/MEDIA-V24.md.

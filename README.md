@@ -100,3 +100,6 @@ Four homepage service cards and a dedicated guided trips page in EN/ES/FR. The b
 
 ### v2.2 service policy and gallery update
 See `docs/SERVICE-POLICIES-V22.md` for approved two-hour lesson rules, streamlined rental/sales content, shared carousel, knowledge base and agent acceptance checks. No new infrastructure required.
+
+## v2.4 media update
+See [docs/MEDIA-V24.md](docs/MEDIA-V24.md). The guided trips hero uses the shared carousel, and the homepage uses the new optimized silent video with a mobile source and matching poster.

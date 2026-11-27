@@ -81,7 +81,7 @@
   },
   {
     "path": "public/brand/patterns/waves-slate.webp",
-    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-01.png",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-01.png",
     "width": 1356,
     "height": 1600,
     "bytes": 188004,
@@ -89,7 +89,7 @@
   },
   {
     "path": "public/brand/patterns/waves-mist.webp",
-    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-02.png",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-02.png",
     "width": 1356,
     "height": 1600,
     "bytes": 225106,
@@ -97,7 +97,7 @@
   },
   {
     "path": "public/brand/patterns/waves-olive.webp",
-    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-03.png",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-03.png",
     "width": 1356,
     "height": 1600,
     "bytes": 143826,
@@ -105,7 +105,7 @@
   },
   {
     "path": "public/brand/patterns/waves-cream-mist.webp",
-    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-04.png",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-04.png",
     "width": 1356,
     "height": 1600,
     "bytes": 166608,
@@ -113,7 +113,7 @@
   },
   {
     "path": "public/brand/patterns/waves-cream-slate.webp",
-    "source": "PATRO\u0301N/PNG/PATRO\u0301N-PENINSULA-05.png",
+    "source": "PATRÓN/PNG/PATRÓN-PENINSULA-05.png",
     "width": 1356,
     "height": 1600,
     "bytes": 278096,
@@ -326,5 +326,77 @@
     "height": 1280,
     "bytes": 247226,
     "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/trips-gallery/surfer-on-shore.webp",
+    "source": "WhatsApp Image 2026-11-27 at 12.44.35 PM (1).jpeg",
+    "width": 852,
+    "height": 1280,
+    "bytes": 101974,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/trips-gallery/surfer-on-wave.webp",
+    "source": "WhatsApp Image 2026-11-27 at 12.44.35 PM.jpeg",
+    "width": 853,
+    "height": 1280,
+    "bytes": 156442,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/trips-gallery/surfer-with-two-boards.webp",
+    "source": "WhatsApp Image 2026-11-27 at 12.44.35 PM (2).jpeg",
+    "width": 852,
+    "height": 1280,
+    "bytes": 129506,
+    "transformation": "EXIF orientation and WebP compression; no crop"
+  },
+  {
+    "path": "public/media/hero.mp4",
+    "source": "IMG_0433.MOV",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 9651307,
+    "transformation": "H.264 MP4; 30 fps; silent; faststart; 28.8667 seconds"
+  },
+  {
+    "path": "public/media/hero-mobile.mp4",
+    "source": "IMG_0433.MOV",
+    "width": 1280,
+    "height": 720,
+    "bytes": 4456814,
+    "transformation": "H.264 MP4; 30 fps; silent; faststart; 28.8667 seconds"
+  },
+  {
+    "path": "public/media/poster.webp",
+    "source": "IMG_0433.MOV",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 100460,
+    "transformation": "WebP still from 0.6 seconds of the new video"
+  },
+  {
+    "path": "public/media/community/surf-vlog.webp",
+    "source": "image(20261127-171354).png",
+    "width": 621,
+    "height": 828,
+    "bytes": 287446,
+    "transformation": "Edge-only crop (13, 22, 634, 850); lossless WebP, original pixels preserved"
+  },
+  {
+    "path": "public/media/community/surf-postcards.webp",
+    "source": "image(20261127-171416).png",
+    "width": 621,
+    "height": 828,
+    "bytes": 546812,
+    "transformation": "Edge-only crop (17, 19, 638, 847); lossless WebP, original pixels preserved"
+  },
+  {
+    "path": "public/media/community/learn-to-surf.webp",
+    "source": "image(20261127-171431).png",
+    "width": 621,
+    "height": 828,
+    "bytes": 531254,
+    "transformation": "Edge-only crop (17, 19, 638, 847); lossless WebP, original pixels preserved"
   }
 ]
