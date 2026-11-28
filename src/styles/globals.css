@@ -325,3 +325,11 @@ h1,h2,h3{color:var(--color-slate)}
 .concierge-review-heading p{flex:1;margin:0}
 .concierge-review-heading img{width:52px;height:32px;object-fit:contain;flex:none}
 @media(max-width:480px){.concierge-sticker{width:40px;height:40px}.concierge-heading{gap:8px}}
+
+/* v2.7 - owner: main section/page titles 35% smaller; card, product, dialog, admin and hero-sub titles unchanged. */
+h2{font-size:clamp(1.625rem,2.795vw,2.6rem)}
+.landing-grid h1{font-size:clamp(1.69rem,3.445vw,3.25rem)}
+.catalog-top h1{font-size:clamp(1.625rem,2.86vw,2.6rem)}
+.catalog-feature-copy h2{font-size:clamp(1.3rem,2.6vw,2.275rem)}
+@media(max-width:700px){h2{font-size:clamp(19.5px,3.9vw,26px)}}
+@media(max-width:620px){.catalog-top h1{font-size:clamp(1.95rem,7.15vw,3.055rem)}}
