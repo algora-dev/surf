@@ -5,5 +5,8 @@ out/
 !.env.example
 *.tsbuildinfo
 .DS_Store
-public/brand/fonts/
+public/brand/fonts/*
+!public/brand/fonts/sfc-bearwood.woff2
+!public/brand/fonts/sfc-woster-sans.woff2
+!public/brand/fonts/aciella-script-italic.otf
 .vercel

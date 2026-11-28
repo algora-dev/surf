@@ -1,1 +1,4 @@
-/* Optional licensed webfonts: run scripts/install-brand-fonts.py with the owner-supplied ZIP. */
+/* Generated from the owner-supplied licensed fonts. */
+@font-face { font-family: "SFC Bearwood"; src: url("/brand/fonts/sfc-bearwood.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "SFC Woster Sans"; src: url("/brand/fonts/sfc-woster-sans.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Aciella Script"; src: url("/brand/fonts/aciella-script-italic.otf") format("opentype"); font-style: italic; font-weight: 400; font-display: swap; }
